@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFC107;
+}
+
+a {
+    cursor: pointer;
+}
+
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+}

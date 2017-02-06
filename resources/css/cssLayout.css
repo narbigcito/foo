@@ -1,0 +1,134 @@
+.card {
+    max-width: 600px;
+    margin: 4em auto;
+    padding: 3em 2em 2em 2em;
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    border-bottom: 1px solid #757575;
+    background: #fafafa;
+    color: #636363;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: all 0.4s ease;
+}
+
+input:focus~label, input.used~label {
+    top: -20px;
+    transform: scale(.75);
+    left: -2px;
+    color: #66BB6A;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #81C784;
+    transition: all 0.3s ease;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus~.bar:before, input:focus~.bar:after {
+    width: 50%;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    margin: .3em 0 1em 0;
+    width: 100%;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    background-color: #00C853;
+}
+
+.buttonBlue:hover {
+    background-color: #66BB6A;
+}
+
+.menu-option {
+    width: 167px;
+    margin: left;
+    height: 70px;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-option span {
+    margin-top: 25px;
+    display: block;
+}
+
+.menu-option:hover {
+    background-color: #FF8F00;
+}
+
+#full-footer {
+    width: 100%;
+    height: 150px;
+    background-color: #FFD54F;
+    bottom: 0;
+}
+
+#bottom {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.selectLabel{
+    float: left;
+    width: 25%;
+    height: 20px;
+}
+
+.select{
+    margin-bottom: 45px;
+    float: left;
+    width: 75%;
+}

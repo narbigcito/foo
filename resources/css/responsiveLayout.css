@@ -1,0 +1,28 @@
+@media only screen and (max-width: 840px) {
+    #top {
+        width: 100%!important;
+        text-align: center;
+    }
+
+    #footer {
+        width: 100%!important;
+    }
+
+    #menu{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card {
+        max-width: 350px;
+        padding: 2em 1em 1em 1em;
+        margin: 1em auto;
+    }
+}
+
+@media only screen and (min-height : 1000px){
+    #full-footer{
+        position: absolute;
+    }
+}
